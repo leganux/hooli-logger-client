@@ -1,4 +1,4 @@
-var axios = require('axios');
+let axios = require('axios');
 
 let hooli = function (host, app, source) {
     this.i_host = 'http://localhost:3333'
@@ -31,7 +31,7 @@ let hooli = function (host, app, source) {
             return JSON.stringify(response.data)
 
         } catch (e) {
-            console.error(e)
+
             throw e
 
         }
